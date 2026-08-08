@@ -7,6 +7,7 @@ author:
 date: last-modified
 bibliography: references.bib
 csl: apa.csl
+citeproc: true
 format:
   typst:
     papersize: a4
@@ -131,7 +132,7 @@ ggplot(penguins, aes(x = bill_len, y = bill_dep, color = species, shape = specie
   scale_color_manual(values = c(
     "Adelie"    = pal("code_blue"),   # dark
     "Chinstrap" = pal("primary"),     # mid teal
-    "Gentoo"    = pal("secondary")    # light teal
+    "Gentoo"    = pal("teal_light")   # light teal
   )) +
   labs(x = "Bill length (mm)", y = "Bill depth (mm)",
        color = "Species", shape = "Species") +
